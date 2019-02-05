@@ -12,7 +12,7 @@ if sys.platform == LINUX:
 elif sys.platform == WINDOWS:
     import win32gui
     import re
-
+print("whatever")
 
 def generate_moves(n_steps=3, file_name=None):
     look_intensities = [1, 3, 5, 7, 9, 23]

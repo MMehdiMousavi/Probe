@@ -23,9 +23,7 @@ elif sys.platform == WINDOWS:
     # In Windows, we can use the class defined above
     w = WindowMgr()
 
-    # Note, I don't have Unreal set up in my Windows machine, so I used an
 
-    # alternate example
     w.find_window_wildcard(".*(64-bit, PCD3D_SM5)")
     w.set_foreground()
 

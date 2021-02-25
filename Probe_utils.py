@@ -14,20 +14,16 @@ elif sys.platform == WINDOWS:
     import re
 print("whatever")
 
-def generate_moves(n_steps=3, file_name=None):
-    look_intensities = [1, 3, 5, 7, 9, 23]
+def generate_settings(n_settings=3, file_name=None):
+
     file = open(file_name, 'w')
-    for i in range(n_steps):
-        look = np.random.randint(1, 12)
-        move = np.random.randint(1, 4)
-        if look == 5 or look == 6:
-            intensity = np.random.randint(2, 6)
-        else:
-            intensity = random.choice(look_intensities)
-        file.write(','.join([str(look), str(move), str(intensity)]))
+    for i in range(n_settings):
+        Mat = np.random.randint(0, 40)  #choose between 40 materials.
+        HDRI = np.random.randint(0, 29) #choose between 29 HDRI maps.
+        Lighting = np.random.randint(0, 5) #choose Lighting position
+        file.write(','.join([str(Mat), str(HDRI), str(Lighting)]))
         file.write('\n')
     file.close()
-
 
 class Probe:
     def __init__(self):
@@ -41,7 +37,13 @@ class Probe:
     def screenshot(self):
         self.press('c')
 
-    def gray(self):
+    def reset(self):
+        self.press('q')
+
+    def outline(self):
+        self.press('o')
+
+    def no_caustic(self):
         self.press('e')
 
     def global_gt(self):
@@ -53,21 +55,17 @@ class Probe:
     def surface_normal(self):
         self.press('r')
 
-    def global_step(self, num_pad_key=None, interval=0.08, step_size=0):
+    def capture(self, num_pad_key=None, interval=0.08, step_size=0):
+        
         self.k.tap_key(self.k.numpad_keys[num_pad_key], n=step_size, interval=interval)
 
         self.screenshot()
         time.sleep(0.1)
 
-        self.gray()
+        self.no_caustic()
         time.sleep(0.1)
         self.screenshot()
-        self.gray()
-
-        self.global_gt()  # global gt
-        time.sleep(0.4)
-        self.screenshot()
-        self.global_gt()
+        self.no_caustic()
 
         self.depth()  # depth
         time.sleep(0.1)
@@ -78,6 +76,18 @@ class Probe:
         time.sleep(0.1)
         self.screenshot()
         self.surface_normal()
+
+        self.outline()
+        time.sleep(0.1)
+        self.screenshot()
+        self.outline()
+
+        self.global_gt()  # global gt
+        time.sleep(0.4)
+        self.screenshot()
+        self.global_gt()
+
+
 
 
 class WindowMgr:

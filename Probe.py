@@ -8,7 +8,7 @@ import time
 import numpy as np
 from pykeyboard import PyKeyboard
 
-from Probe_utils import MK, Probe, WindowMgr, KeyUtils, generate_moves
+from Probe_utils import MK, Probe, WindowMgr, KeyUtils, generate_settings
 
 LINUX = 'linux'
 WINDOWS = 'win32'
@@ -48,12 +48,12 @@ steps = np.zeros(nSteps)
 ##############################################################################
 # LOOKING AROUND RANDOMLY
 ##############################################################################
-moves_file = "ProbeLog\look.txt"
+moves_file = "ProbeLog\Supercaustics.txt"
 
 ku = KeyUtils()
 pkey = Probe()
 k = PyKeyboard()
-#generate_moves(3, moves_file)
+generate_settings(10, moves_file)
 
 ##############################################################################
 # GATHER DATA
@@ -61,32 +61,16 @@ k = PyKeyboard()
 file = open(moves_file)
 for i in range(nSteps):
     for action in list(file.readlines()):
-        look, move, intensity = action.split(',')
+        Mat, HDRI, Lighting = action.split()
 
-        look = int(look)
-        move = int(move)
-        intensity = int(intensity)
-
-        if look == MK['LOOK_UP'] or look == MK['LOOK_DOWN']:
-            k.tap_key(k.scroll_lock_key, n=intensity, interval=0.01)
-
-        elif look in MK['LOOK_RIGHT']:
-            k.tap_key(k.page_up_key, n=intensity, interval=0.01)
-
-        else:
-            k.tap_key(k.insert_key, n=intensity, interval=0.01)
-
-        if move == 1:
-            pkey.global_step(num_pad_key=8, step_size=stepsize)
-
-        elif move == 2:
-            pkey.global_step(num_pad_key=2, step_size=stepsize)
-
-        elif move == 3:
-            pkey.global_step(num_pad_key=6, step_size=stepsize)
-
-        else:
-            pkey.global_step(num_pad_key=4, step_size=stepsize)
+        Mat = int(Mat)
+        HDRI = int(HDRI)
+        Lighting = int(Lighting)
+        k.tap_key('M', n=Mat, interval=0.01)
+        k.tap_key('H',n=HDRI, interval=0.01)
+        k.tap_key('L', n=HDRI, interval=0.01)
+        Probe.capture()
+        Probe.reset()
 
 # Pause at the end to avoid transitioning away from the game too abruptly
 time.sleep(0.5)

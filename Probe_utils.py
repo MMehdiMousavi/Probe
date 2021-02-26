@@ -39,6 +39,7 @@ class Probe:
 
     def reset(self):
         self.press('q')
+        time.sleep(5)
 
     def outline(self):
         self.press('o')
@@ -55,10 +56,8 @@ class Probe:
     def surface_normal(self):
         self.press('r')
 
-    def capture(self, num_pad_key=None, interval=0.08, step_size=0):
+    def capture(self):
         
-        self.k.tap_key(self.k.numpad_keys[num_pad_key], n=step_size, interval=interval)
-
         self.screenshot()
         time.sleep(0.1)
 

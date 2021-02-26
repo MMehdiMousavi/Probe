@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e93838f-a9d4-48b7-b85d-10e0cc4d235a" name="Default Changelist" comment="Probe for Supercaustics">
+    <list default="true" id="6e93838f-a9d4-48b7-b85d-10e0cc4d235a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Probe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Probe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Probe_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Probe_utils.py" afterDir="false" />
@@ -15,39 +15,29 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ProbeProj$Probe.coverage" NAME="Probe Coverage Results" MODIFIED="1549401842110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ProbeProj$sort.coverage" NAME="sort Coverage Results" MODIFIED="1549401859276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/AI_Play9/WindowsNoEditor/Global_Illumination/Saved" />
-    <SUITE FILE_PATH="coverage/Probe$Probe.coverage" NAME="Probe Coverage Results" MODIFIED="1614296147287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Probe.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="297">
-                    <caret line="64" column="43" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
-                    <folding>
-                      <element signature="e#188#197#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
+    <SUITE FILE_PATH="coverage/Probe$Probe.coverage" NAME="Probe Coverage Results" MODIFIED="1614297527507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Probe_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+            <state relative-caret-position="504">
+              <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Probe.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+              <folding>
+                <element signature="e#188#197#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,9 +57,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1772" />
-    <option name="y" value="-17" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1633" />
+    <option name="y" value="156" />
     <option name="width" value="1306" />
     <option name="height" value="794" />
   </component>
@@ -178,7 +168,7 @@
       <workItem from="1614124823768" duration="1725000" />
       <workItem from="1614291888888" duration="631000" />
       <workItem from="1614292548140" duration="416000" />
-      <workItem from="1614293745108" duration="2294000" />
+      <workItem from="1614293745108" duration="4348000" />
     </task>
     <task id="LOCAL-00001" summary="Probe for Supercaustics">
       <created>1614125259387</created>
@@ -187,11 +177,18 @@
       <option name="project" value="LOCAL" />
       <updated>1614125259387</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Configuring Probe for Super Caustics release v0.1">
+      <created>1614296177376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614296177376</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7870000" />
+    <option name="totallyTimeSpent" value="9924000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -203,15 +200,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-1633" y="156" width="1306" height="794" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26279318" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39566612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46293494" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -267,14 +264,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Probe for Supercaustics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Probe for Supercaustics" />
+    <MESSAGE value="Configuring Probe for Super Caustics release v0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuring Probe for Super Caustics release v0.1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/AI_Play9/WindowsNoEditor/Global_Illumination/Saved/sort.py" />
     <entry file="file://$PROJECT_DIR$/Probe_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+        <state relative-caret-position="504">
+          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -283,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Probe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="64" column="43" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+        <state relative-caret-position="440">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
           <folding>
             <element signature="e#188#197#0" expanded="true" />
           </folding>

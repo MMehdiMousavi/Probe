@@ -52,7 +52,7 @@ for action in list(file.readlines()):
     Lighting = int(Lighting)
     ToteBox = int(ToteBox)
 
-    print('image set ' + str(counter) + 'of MHHHHHHHHVcecetccgVc' + str(setsize))
+    print('image set ' + str(counter) + ' of ' + str(setsize))
     print("settings: " + str(action))
     counter += 1
 

@@ -18,10 +18,11 @@ def generate_settings(n_settings=3, file_name=None):
 
     file = open(file_name, 'w')
     for i in range(n_settings):
-        Mat = np.random.randint(0, 40)  #choose between 40 materials.
-        HDRI = np.random.randint(0, 29) #choose between 29 HDRI maps.
-        Lighting = np.random.randint(0, 5) #choose Lighting position
-        file.write(','.join([str(Mat), str(HDRI), str(Lighting)]))
+        Mat = np.random.randint(0, 41)  #choose between 40 materials.
+        HDRI = np.random.randint(0, 30) #choose between 29 HDRI maps.
+        Lighting = np.random.randint(0, 6) #choose Lighting position
+        ToteBox = np.random.randint(0,2) #totebox or no totebox
+        file.write(','.join([str(Mat), str(HDRI), str(Lighting), str(ToteBox)]))
         file.write('\n')
     file.close()
 
@@ -39,7 +40,6 @@ class Probe:
 
     def reset(self):
         self.press('q')
-        time.sleep(5)
 
     def outline(self):
         self.press('o')

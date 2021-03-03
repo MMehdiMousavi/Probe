@@ -32,7 +32,7 @@ class Probe:
 
     def press(self, key):
         self.k.press_key(key)
-        time.sleep(0.1)
+        time.sleep(0.5)
         self.k.release_key(key)
 
     def screenshot(self):
@@ -53,37 +53,37 @@ class Probe:
     def depth(self):
         self.press('t')
 
-    def surface_normal(self):
+    def surface_normal(self):                        
         self.press('r')
 
     def capture(self):
         
         self.screenshot()
-        time.sleep(0.1)
+        time.sleep(0.25)
 
         self.no_caustic()
-        time.sleep(0.1)
+        time.sleep(0.25)
         self.screenshot()
         self.no_caustic()
 
         self.depth()  # depth
-        time.sleep(0.1)
+        time.sleep(0.25)
         self.screenshot()
         self.depth()
 
         self.surface_normal()
-        time.sleep(0.1)
+        time.sleep(0.25)
         self.screenshot()
         self.surface_normal()
 
         self.outline()
-        time.sleep(0.1)
+        time.sleep(0.25)
         self.screenshot()
         self.outline()
 
         self.global_gt()  # global gt
-        time.sleep(0.4)
-        self.screenshot()
+        time.sleep(0.25)
+        self.screenshot()       
         self.global_gt()
 
 

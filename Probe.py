@@ -36,7 +36,7 @@ moves_file = "ProbeLog\Supercaustics.txt"
 ku = KeyUtils()
 pkey = Probe()  
 k = PyKeyboard()
-setsize = 10
+setsize = 100
 generate_settings(setsize, moves_file)
 
 ##############################################################################
@@ -53,7 +53,7 @@ for action in list(file.readlines()):
     ToteBox = int(ToteBox)
 
     print('image set ' + str(counter) + ' of ' + str(setsize))
-    print("settings: " + str(action))
+    print("settings: " + str(action))                                                                                    ECETCTR
     counter += 1
 
     pkey.reset()

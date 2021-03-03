@@ -15,15 +15,16 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ProbeProj$Probe.coverage" NAME="Probe Coverage Results" MODIFIED="1549401842110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ProbeProj$sort.coverage" NAME="sort Coverage Results" MODIFIED="1549401859276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/AI_Play9/WindowsNoEditor/Global_Illumination/Saved" />
-    <SUITE FILE_PATH="coverage/Probe$Probe.coverage" NAME="Probe Coverage Results" MODIFIED="1614710993377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Probe$Probe.coverage" NAME="Probe Coverage Results" MODIFIED="1614719148979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Probe_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="735">
+              <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+              <caret line="80" column="99" lean-forward="true" selection-start-line="80" selection-start-column="99" selection-end-line="80" selection-end-column="99" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -34,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Probe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="63" column="29" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+            <state relative-caret-position="412">
+              <caret line="55" column="128" selection-start-line="55" selection-start-column="128" selection-end-line="55" selection-end-column="128" />
               <folding>
                 <element signature="e#188#197#0" expanded="true" />
               </folding>
@@ -57,10 +58,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1316" />
-    <option name="y" value="145" />
-    <option name="width" value="1306" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1371" />
+    <option name="y" value="84" />
+    <option name="width" value="745" />
     <option name="height" value="902" />
   </component>
   <component name="ProjectView">
@@ -172,7 +173,7 @@
       <workItem from="1614359386555" duration="820000" />
       <workItem from="1614701737721" duration="354000" />
       <workItem from="1614702116442" duration="193000" />
-      <workItem from="1614702329062" duration="4536000" />
+      <workItem from="1614702329062" duration="10861000" />
     </task>
     <task id="LOCAL-00001" summary="Probe for Supercaustics">
       <created>1614125259387</created>
@@ -195,11 +196,25 @@
       <option name="project" value="LOCAL" />
       <updated>1614299657292</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Configuring Probe for Super Caustics release v0.2&#10;-Bugfixes">
+      <created>1614711136538</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614711136538</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Configuring Probe for Super Caustics release v0.2&#10;-Bugfixes">
+      <created>1614711167149</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614711167149</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16080000" />
+    <option name="totallyTimeSpent" value="22405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -211,7 +226,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1316" y="145" width="1306" height="902" extended-state="0" />
+    <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2771855" />
@@ -219,7 +234,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.56046814" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4619507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -277,14 +292,16 @@
     <MESSAGE value="Probe for Supercaustics" />
     <MESSAGE value="Configuring Probe for Super Caustics release v0.1" />
     <MESSAGE value="Configuring Probe for Super Caustics release v0.1&#10;-Bugfixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuring Probe for Super Caustics release v0.1&#10;-Bugfixes" />
+    <MESSAGE value="Configuring Probe for Super Caustics release v0.2&#10;-Bugfixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuring Probe for Super Caustics release v0.2&#10;-Bugfixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/AI_Play9/WindowsNoEditor/Global_Illumination/Saved/sort.py" />
     <entry file="file://$PROJECT_DIR$/Probe_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="735">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+          <caret line="80" column="99" lean-forward="true" selection-start-line="80" selection-start-column="99" selection-end-line="80" selection-end-column="99" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -293,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Probe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="63" column="29" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+        <state relative-caret-position="412">
+          <caret line="55" column="128" selection-start-line="55" selection-start-column="128" selection-end-line="55" selection-end-column="128" />
           <folding>
             <element signature="e#188#197#0" expanded="true" />
           </folding>

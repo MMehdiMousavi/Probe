@@ -31,7 +31,7 @@ interval = 0.05 #Interval in seconds
 ##############################################################################
 # LOOKING AROUND RANDOMLY
 ##############################################################################
-moves_file = "ProbeLog\Supercaustics_8Cameras.txt"
+moves_file = "ProbeLog\Supercaustics_12Cameras.txt"
 
 ku = KeyUtils()
 pkey = Probe()
@@ -58,7 +58,7 @@ for action in list(file.readlines()):
 
     pkey.reset()
 
-    if ToteBox == 1:
+    if ToteBox % 20 == 0:
         k.tap_key('U', n=1, interval=interval)
 
     time.sleep(.5)
@@ -67,7 +67,7 @@ for action in list(file.readlines()):
     k.tap_key('H', n=HDRI, interval=interval)
     k.tap_key('L', n=Lighting, interval=interval)
 
-    for angle in range(0, 8):
+    for angle in range(0, 12):
         k.tap_key('V', n=1, interval=interval)
         pkey.capture()
         time.sleep(1*interval)

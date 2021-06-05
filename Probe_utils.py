@@ -21,7 +21,7 @@ def generate_settings(n_settings=3, file_name=None):
         Mat = np.random.randint(0, 41)  #choose between 40 materials.
         HDRI = np.random.randint(0, 30) #choose between 29 HDRI maps.
         Lighting = np.random.randint(0, 6) #choose Lighting position
-        ToteBox = np.random.randint(0,2) #totebox or no totebox
+        ToteBox = np.random.randint(0,20) #totebox or no totebox
         file.write(','.join([str(Mat), str(HDRI), str(Lighting), str(ToteBox)]))
         file.write('\n')
     file.close()
